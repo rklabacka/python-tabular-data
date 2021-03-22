@@ -17,7 +17,6 @@ def getDataframeList(dataframe):
     species_list = dataframe.species.unique()
     dataframe_list = []
     for i in species_list:
-        print(i)
         dataframe_list.append(dataframe[dataframe.species==i])        
     return dataframe_list
 
